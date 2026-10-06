@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Weather App</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<main class="app">
+
+    <section class="weather-card">
+
+        <div class="top-section">
+
+            <div>
+                <p class="label">CURRENT WEATHER</p>
+                <h1 id="city">London</h1>
+            </div>
+
+            <div class="weather-icon" id="weather-icon">
+                ☀️
+            </div>
+
+        </div>
+
+        <div class="temperature-section">
+            <h2 id="temperature">--°C</h2>
+            <p id="weather_code">Search for a city</p>
+        </div>
+
+        <div class="weather-details">
+
+            <div class="detail">
+                <span class="detail-icon">💧</span>
+                <div>
+                    <p class="detail-label">Humidity</p>
+                    <p id="humidity">--%</p>
+                </div>
+            </div>
+
+            <div class="detail">
+                <span class="detail-icon">🌡️</span>
+                <div>
+                    <p class="detail-label">Temperature</p>
+                    <p id="feels">--°C</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="search-section">
+
+            <input
+                type="text"
+                id="city-input"
+                placeholder="Search for a city..."
+                autocomplete="off"
+            >
+
+            <button id="search-city">
+                Search
+            </button>
+
+        </div>
+
+        <p id="error-message"></p>
+
+    </section>
+
+</main>
+
+<script type="module" src="index.js"></script>
+
+
+</body>
+
+</html>
