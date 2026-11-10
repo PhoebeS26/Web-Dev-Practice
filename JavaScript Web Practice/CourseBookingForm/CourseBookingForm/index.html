@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- booking form container -->
+    <div class="booking-form-container">
+        <form id="booking-form" novalidate>
+
+            <!-- name input -->
+            <div class="form-row">
+                <label for="name">Name:</label>
+
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <span id="name-error"></span>
+                </div>
+            </div>
+
+            <!-- email input -->
+            <div class="form-row">
+                <label for="email">Email:</label>
+
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Enter Your Email"
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                    <span id="email-error"></span>
+                </div>
+
+            </div>
+
+            <!-- card input -->
+            <div class="form-row">
+                <label for="card">Card:</label>
+
+                <div class="input-container">
+                    <input type="text" id="card" placeholder="Enter a Proxy Credit Card Number." pattern="[0-9]+"
+                        required>
+                    <span id="card-error"></span>
+                </div>
+
+            </div>
+
+            <!-- form submit button -->
+            <div class="form-submit">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
